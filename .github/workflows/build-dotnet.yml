@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   run:
-    runs-on: "phantom-machine"
+    runs-on: ['self-hosted', 'RISCV64']
     container:
       image: mcr.microsoft.com/dotnet-buildtools/prereqs:ubuntu-22.04-cross-riscv64
       env:
